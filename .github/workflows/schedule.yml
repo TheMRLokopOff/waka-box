@@ -1,14 +1,7 @@
 name: Update gist with WakaTime stats
 on:
-  
-  workflow_dispatch:
-    inputs:
-      git-ref:
-        description: Git Ref (Optional)    
-        required: false
-        
   schedule:
-    - cron: "50 * * * *"
+    - cron: "0 3 * * *"
 jobs:
   update-gist:
     runs-on: ubuntu-latest
